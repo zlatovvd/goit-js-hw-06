@@ -5,7 +5,7 @@ input.addEventListener("input", onInput);
 
 function onInput(event) {
 	
-	output.textContent = event.currentTarget.value === "" 
+	output.textContent = event.currentTarget.value.trim() === ""
 		? "Anonymous"
 		: event.currentTarget.value;
 }
